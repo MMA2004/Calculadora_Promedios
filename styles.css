@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  h1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+  }
+  
+  .container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botones principales */
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .opciones .boton {
+    text-decoration: none;
+    padding: 15px 25px;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .opciones .boton:hover {
+    background: #2980b9;
+  }
+  
+  /* Botón de volver */
+  .boton-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #95a5a6;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-volver:hover {
+    background: #7f8c8d;
+  }
+  
+  /* Notas y materias */
+  .nota {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nota input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .nota button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .nota button:hover {
+    background: #c0392b;
+  }
+  
+  /* Resultados */
+  .resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Responsividad */
+  @media (min-width: 600px) {
+    .opciones {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .opciones .boton {
+      width: auto;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 599px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .nota input {
+      font-size: 14px;
+    }
+  }
+  
